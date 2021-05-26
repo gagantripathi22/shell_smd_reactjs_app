@@ -1,0 +1,73 @@
+.container {
+  background-color: #282c34;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.titlebar {
+  height: 30px;
+  width: 100%;
+  min-width: 100vh;
+  background-color: #36383C;
+  -webkit-user-select: none;
+  -webkit-app-region: drag;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.main-area {
+  background-color: #282c34;
+  display: flex;
+  width: 100%;
+  min-width: 100vh;
+  flex-direction: row;
+  height: calc(100vh - 30px);
+}
+
+.main-container {
+  height: calc(100vh - 30px);
+  width: 100%;
+  min-width: 100vh;
+
+}
+
+.close {
+  height: 30px;
+  width: 35px;
+  -webkit-app-region: no-drag;
+}
+
+.close:hover {
+  background-color: #E24C4B;
+}
+
+.close:active {
+  background-color: #ca4343;
+}
+
+.minimize {
+  height: 30px;
+  width: 35px;
+  -webkit-app-region: no-drag;
+}
+
+.minimize:hover {
+  background-color: #484a4f;
+}
+
+.minimize:active {
+  background-color: #414347;
+}
+
+.closeIcon {
+  height: 11.5px;
+  margin-left: 11px;
+  margin-top: 9px;
+}
+
+.minimizeIcon {
+  height: 11.5px;
+  margin-left: 11px;
+  margin-top: 9px;
+}
