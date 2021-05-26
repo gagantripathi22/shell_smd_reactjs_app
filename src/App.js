@@ -5,6 +5,8 @@ import minimizeIcon from './assets/titlebar/minimize.png';
 import searchIcon from './assets/titlebar/search.png';
 import settingsIcon from './assets/titlebar/settings.png';
 import GettingStarted from './windows/getting_started/index.js'
+import CreateNew from './windows/create_new/index'
+import ProjectName from './windows/create_new/project_name/index'
 
 const { remote } = window.require('electron');
 
@@ -55,7 +57,9 @@ class App extends React.Component {
         </div>
         <div className="main-area">
           <div className="main-container">
-            <GettingStarted />
+            <CreateNew />
+            {/* <ProjectName /> */}
+            {/* <GettingStarted /> */}
           </div>
         </div>
         <script src=""></script>

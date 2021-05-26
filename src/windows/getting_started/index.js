@@ -14,7 +14,7 @@ class GettingStarted extends React.Component {
 
     document.body.onmousemove = function(e) {
       /* 15 = background-size/2 */
-      h.style.setProperty('background-position',(e.clientX - 15)+'px '+(e.clientY - 15)+'px');
+      h.style.setProperty('background-position',(e.clientX - 25)+'px '+(e.clientY - 25)+'px');
     }
   }
   hehe() {
@@ -22,10 +22,10 @@ class GettingStarted extends React.Component {
   render() {
     return (
     <div className="getting-started-container">
-        <div className="logo-placeholder"></div>
+        {/* <div className="logo-placeholder"></div> */}
         <div className="getting-started-bg">
           <div className="getting-started-btn">
-            <div className="getting-started-text" onClick={() => this.hehe()}>Get Started</div>
+            <div className="getting-started-text" onClick={() => this.hehe()}>Continue</div>
           </div>
         </div>
     </div>
